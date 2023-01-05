@@ -78,30 +78,30 @@ def stats(update, context):
     mem_a = get_readable_file_size(memory.available)
     mem_u = get_readable_file_size(memory.used)
     if config_dict['EMOJI_THEME']:
-            stats = f'<b>╭─《🌐 BOT STATISTICS 🌐》</b>\n' \
-                    f'<b>├ 🛠 Updated On: </b>{last_commit}\n'\
-                    f'<b>├ ⌛ Uptime: </b>{currentTime}\n'\
-                    f'<b>├ 🤖 Version: </b>{version}\n'\
-                    f'<b>├ 🟢 OS Uptime: </b>{osUptime}\n'\
-                    f'<b>├ 🖥️ CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
-                    f'<b>├ 🎮 RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
-                    f'<b>├ 💾 Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
-                    f'<b>├ 💿 Disk Free:</b> {free}\n'\
-                    f'<b>├ 🔺 Upload Data:</b> {sent}\n'\
-                    f'<b>╰ 🔻 Download Data:</b> {recv}\n\n'
+            stats = f'<b>╭─《🎉 BOT STATISTICS 🎉》</b>\n' \
+                    f'<b>├ 🦋 Updated On: </b>{last_commit}\n'\
+                    f'<b>├ 🎉 Uptime: </b>{currentTime}\n'\
+                    f'<b>├ 🐾 Version: </b>{version}\n'\
+                    f'<b>├ 🐧 OS Uptime: </b>{osUptime}\n'\
+                    f'<b>├ 🎄 CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
+                    f'<b>├ ☘️ RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
+                    f'<b>├ 🌃 Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
+                    f'<b>├ 🌸 Disk Free:</b> {free}\n'\
+                    f'<b>├ ⭐ Upload Data:</b> {sent}\n'\
+                    f'<b>╰ ☁️ Download Data:</b> {recv}\n\n'
 
     else:
-            stats = f'<b>╭─《🌐 BOT STATISTICS 🌐》</b>\n' \
-                    f'<b>├  Updated On: </b>{last_commit}\n'\
-                    f'<b>├  Uptime: </b>{currentTime}\n'\
-                    f'<b>├  Version: </b>{version}\n'\
-                    f'<b>├  OS Uptime: </b>{osUptime}\n'\
-                    f'<b>├  CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
-                    f'<b>├  RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
-                    f'<b>├  Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
-                    f'<b>├  Disk Free:</b> {free}\n'\
-                    f'<b>├  Upload Data:</b> {sent}\n'\
-                    f'<b>╰  Download Data:</b> {recv}\n\n'
+            stats = f'<b>╭─《🎉 BOT STATISTICS 🎉》</b>\n' \
+                    f'<b>├ 🦋 Updated On: </b>{last_commit}\n'\
+                    f'<b>├ 🎉 Uptime: </b>{currentTime}\n'\
+                    f'<b>├ 🐾 Version: </b>{version}\n'\
+                    f'<b>├ 🐧 OS Uptime: </b>{osUptime}\n'\
+                    f'<b>├ 🎄 CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
+                    f'<b>├ ☘️ RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
+                    f'<b>├ 🌃 Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
+                    f'<b>├ 🌸 Disk Free:</b> {free}\n'\
+                    f'<b>├ ⭐ Upload Data:</b> {sent}\n'\
+                    f'<b>╰ ☁️ Download Data:</b> {recv}\n\n'
 
 
 
@@ -125,22 +125,22 @@ def stats(update, context):
 
         if config_dict['EMOJI_THEME']: 
             stats += f'<b>╭─《 ⚠️ BOT LIMITS ⚠️ 》</b>\n'\
-                     f'<b>├ 🧲 Torrent/Direct: </b>{torrent_direct}\n'\
-                     f'<b>├ 🔐 Zip/Unzip: </b>{zip_unzip}\n'\
-                     f'<b>├ 🔷 Leech: </b>{leech_limit}\n'\
-                     f'<b>├ ♻️ Clone: </b>{clone_limit}\n'\
-                     f'<b>├ 🔰 Mega: </b>{mega_limit}\n'\
-                     f'<b>├ 💣 Total Tasks: </b>{total_task}\n'\
-                     f'<b>╰ 🔫 User Tasks: </b>{user_task}\n\n'
+                     f'<b>├ ☔ Torrent/Direct: </b>{torrent_direct}\n'\
+                     f'<b>├ 🌎 Zip/Unzip: </b>{zip_unzip}\n'\
+                     f'<b>├ 🌠 Leech: </b>{leech_limit}\n'\
+                     f'<b>├ ⭐ Clone: </b>{clone_limit}\n'\
+                     f'<b>├ 🍉 Mega: </b>{mega_limit}\n'\
+                     f'<b>├ 🦊 Total Tasks: </b>{total_task}\n'\
+                     f'<b>╰ 🌙 User Tasks: </b>{user_task}\n\n'
         else: 
             stats += f'<b>╭─《 ⚠️ BOT LIMITS ⚠️ 》</b>\n'\
-                     f'<b>├  Torrent/Direct: </b>{torrent_direct}\n'\
-                     f'<b>├  Zip/Unzip: </b>{zip_unzip}\n'\
-                     f'<b>├  Leech: </b>{leech_limit}\n'\
-                     f'<b>├  Clone: </b>{clone_limit}\n'\
-                     f'<b>├  Mega: </b>{mega_limit}\n'\
-                     f'<b>├  Total Tasks: </b>{total_task}\n'\
-                     f'<b>╰  User Tasks: </b>{user_task}\n\n'
+                     f'<b>├ ☔ Torrent/Direct: </b>{torrent_direct}\n'\
+                     f'<b>├ 🌎 Zip/Unzip: </b>{zip_unzip}\n'\
+                     f'<b>├ 🌠 Leech: </b>{leech_limit}\n'\
+                     f'<b>├ ⭐ Clone: </b>{clone_limit}\n'\
+                     f'<b>├ 🍉 Mega: </b>{mega_limit}\n'\
+                     f'<b>├ 🦊 Total Tasks: </b>{total_task}\n'\
+                     f'<b>╰ 🌙 User Tasks: </b>{user_task}\n\n'
 
     if config_dict['PICS']:
         sendPhoto(stats, context.bot, update.message, rchoice(config_dict['PICS']))
@@ -150,11 +150,11 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     if config_dict['EMOJI_THEME']:
-        buttons.buildbutton(f"😎 {config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
-        buttons.buildbutton(f"🔥 {config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
+        buttons.buildbutton(f"😪 {config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
+        buttons.buildbutton(f"🦋 {config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
     else:
-        buttons.buildbutton(f"{config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
-        buttons.buildbutton(f"{config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
+        buttons.buildbutton(f🥺 "{config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
+        buttons.buildbutton(f"🦋 {config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''This bot can mirror all your links to Google Drive!
@@ -192,7 +192,7 @@ def restart(update, context):
 def ping(update, context):
     if config_dict['EMOJI_THEME']:
         start_time = int(round(time() * 1000))
-        reply = sendMessage("Starting_Ping ⛔", context.bot, update.message)
+        reply = sendMessage("Starting_Ping ✨", context.bot, update.message)
         end_time = int(round(time() * 1000))
         editMessage(f'{end_time - start_time} ms 🔥', reply)
     else:
@@ -425,20 +425,20 @@ def main():
                 if ospath.isfile(".restartmsg"):
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
-                    msg = f"😎 Restarted Successfully❗\n"
+                    msg = f"😎 Restarted Successfully ON SAOxCLOUD❗\n"
                 else:
-                    msg = f"😎 Bot Restarted!\n"
-                msg += f"📅 DATE: {date}\n"
-                msg += f"⌚ TIME: {time}\n"
-                msg += f"🌐 TIMEZONE: {timez}\n"
-                msg += f"🤖 VERSION: {version}"
+                    msg = f"😎 Bot Restarted ON SAOxCLOUD!\n"
+                msg += f"🍇 DATE: {date}\n"
+                msg += f"🥖 TIME: {time}\n"
+                msg += f"🌶️ TIMEZONE: {timez}\n"
+                msg += f"🍉 VERSION: {version}"
 
                 for tag, links in data.items():
                     msg += f"\n{tag}: "
                     for index, link in enumerate(links, start=1):
                         msg += f" <a href='{link}'>{index}</a> |"
                         if len(msg.encode()) > 4000:
-                            if '😎 Restarted Successfully❗' in msg and cid == chat_id:
+                            if '😎 Restarted Successfully ON SAOxCLOUD❗' in msg and cid == chat_id:
                                 try:
                                     bot.editMessageText(msg, chat_id, msg_id)
                                 except:
@@ -450,7 +450,7 @@ def main():
                                 except Exception as e:
                                     LOGGER.error(e)
                             msg = ''
-                if '😎 Restarted Successfully❗' in msg and cid == chat_id:
+                if '😎 Restarted Successfully ON SAOxCLOUD❗' in msg and cid == chat_id:
                     try:
                         bot.editMessageText(msg, chat_id, msg_id)
                     except:
@@ -466,11 +466,11 @@ def main():
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
         try:
-            msg = f"😎 Restarted Successfully❗\n"
-            msg += f"📅 DATE: {date}\n"
-            msg += f"⌚ TIME: {time}\n"
-            msg += f"🌐 TIMEZONE: {timez}\n"
-            msg += f"🤖 VERSION: {version}"            
+            msg = f"😎 Bot Restarted ON SAOxCLOUD!\n"
+            msg += f"🍇 DATE: {date}\n"
+            msg += f"🥖 TIME: {time}\n"
+            msg += f"🌶️ TIMEZONE: {timez}\n"
+            msg += f"🍉 VERSION: {version}"            
             bot.edit_message_text(msg, chat_id, msg_id)
         except Exception as e:
             LOGGER.info(e)
@@ -498,7 +498,7 @@ def main():
     dispatcher.add_handler(stats_handler)
     dispatcher.add_handler(log_handler)
     updater.start_polling(drop_pending_updates=IGNORE_PENDING_REQUESTS)
-    LOGGER.info("💥𝐁𝐨𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝❗")
+    LOGGER.info("💥𝐁𝐨𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 ON SAOxCLOUD❗")
     signal(SIGINT, exit_clean_up)
 
 app.start()
